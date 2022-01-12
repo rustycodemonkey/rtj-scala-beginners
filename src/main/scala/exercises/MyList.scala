@@ -1,6 +1,6 @@
 package exercises
 
-import scala.runtime.Nothing$
+// import scala.runtime.Nothing$
 
 abstract class MyList[+A] {
 
