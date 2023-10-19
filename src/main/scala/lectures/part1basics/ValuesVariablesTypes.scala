@@ -10,7 +10,7 @@ object ValuesVariablesTypes extends App {
 
   val y = 43
   println(y)
-  // COMPILER can infer tupes
+  // COMPILER can infer types
 
   // val aString: String = "hello";
   // Semicolon allowed but not part of Scala style

@@ -20,7 +20,7 @@ object Expressions extends App {
 
   // Instruction (DO) vs Expressions (VALUE)
 
-  // IF expression
+  // IF in Scala is an expression
   val aCondition = true
   val aConditionedValue = if(aCondition) 5 else 3 // IF expression
   println(aConditionedValue)
@@ -32,13 +32,13 @@ object Expressions extends App {
     println(i)
     i += 1
   }
+  // NEVER WRITE ABOVE AGAIN! This is imperative code
 
-  // NEVER WRITE THIS AGAIN
+  // EVERYTHING in Scala is an Expression
 
-  // EVERYTHING in SCala is an Expression
-
-  val aWeirdValue = (aVariable = 3) // Unit === void
+  val aWeirdValue = (aVariable = 3) // Type Unit === void
   println(aWeirdValue)
+  // reassigning values in Scala are expressions returning Unit
 
   // side effects: println(), whiles, reassigning
 
@@ -50,6 +50,7 @@ object Expressions extends App {
 
     if (z > 2) "hello" else "goodbye"
   }
+  println(aCodeBlock)
 
   // val anotherValue = z + 1
   // z is defined within a code block
@@ -64,6 +65,7 @@ object Expressions extends App {
     if(someValue) 239 else 986
     42
   }
+  println(someValue)
   println(someOtherValue)
 
 }

@@ -87,5 +87,4 @@ object Functions extends App {
 //  println(isPrime(2003))
   println(isPrime(24))
 
-
 }

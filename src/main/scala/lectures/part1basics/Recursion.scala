@@ -75,9 +75,11 @@ object Recursion extends App {
   // println(isPrime(629))
   println(isPrime(11))
 
+
   def fibonacci(n: Int): Int = {
     // 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
+    @tailrec
     def fiboTailrec(i: Int, last: Int, nextToLast: Int): Int =
       if(i >= n) last
       else fiboTailrec(i + 1, last + nextToLast, last)
@@ -86,6 +88,6 @@ object Recursion extends App {
     else fiboTailrec(2,1,1)
   }
 
-  println(fibonacci(5))
+  println(fibonacci(8))
 
 }

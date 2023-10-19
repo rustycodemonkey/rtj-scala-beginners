@@ -11,6 +11,8 @@ object CBNvsCBV extends App {
     println("by name: " + x)
     println("by name: " + x)
   }
+// Arrow above delays the evaluation of the expression passed as a paraneter
+// Useful for lazy streams and things that might fail
 
   calledByValue(System.nanoTime()) // Evaluates System.nanoTime() first
   calledByName(System.nanoTime())  // Literal name of System.nanoTime() gets parsed to the function
